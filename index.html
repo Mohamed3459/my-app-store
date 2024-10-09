@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">My App Store</a> <!-- Replace with your store name -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> <!-- Home link -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a> <!-- Smooth scroll to About Me -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#apps">Apps</a> <!-- Smooth scroll to Apps -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a> <!-- Smooth scroll to Contact -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="jumbotron text-center bg-light">
+        <h1 class="display-4">Welcome to My App Store</h1> <!-- Replace with your store's tagline -->
+        <p class="lead">Discover and download the best apps and games for your Android device.</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="your-image.jpg" alt="Your Name" class="img-fluid rounded-circle mb-3" width="200"> <!-- Replace with your image file -->
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>Hello! I'm [Your Name], the developer behind this app store. I specialize in creating engaging and high-quality Android games and applications. My mission is to provide users with enjoyable and useful tools to enhance their mobile experience.</p> <!-- Replace with your bio -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="container my-5">
+        <h2 class="text-center mb-4">Available Apps</h2>
+        <div class="row">
+            <!-- App Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="app1.png" class="card-img-top" alt="App 1"> <!-- Replace with your app image -->
+                    <div class="card-body">
+                        <h5 class="card-title">Awesome Game</h5> <!-- Replace with your app name -->
+                        <p class="card-text">An exciting game that challenges your skills and provides endless fun.</p> <!-- Replace with your app description -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#app1Modal">
+                            Learn More
+                        </button>
+                        <a href="https://raw.githubusercontent.com/yourusername/my-app-store/main/yourgame.apk" class="btn btn-success ml-2">Download</a> <!-- Replace 'yourusername' and 'yourgame.apk' -->
+                    </div>
+                </div>
+            </div>
+            <!-- Add more app cards here following the same structure -->
+        </div>
+    </section>
+
+    <!-- App Modal -->
+    <div class="modal fade" id="app1Modal" tabindex="-1" aria-labelledby="app1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Awesome Game</h5> <!-- Replace with your app name -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>An in-depth description of your game goes here. Explain the gameplay mechanics, story, and unique features that make your game stand out.</p> <!-- Replace with detailed description -->
+                    <h6>Screenshots:</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="app1-screenshot1.png" class="img-fluid mb-3" alt="Screenshot 1"> <!-- Replace with your screenshot -->
+                        </div>
+                        <div class="col-md-6">
+                            <img src="app1-screenshot2.png" class="img-fluid mb-3" alt="Screenshot 2"> <!-- Replace with your screenshot -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://raw.githubusercontent.com/yourusername/my-app-store/main/yourgame.apk" class="btn btn-success">Download Now</a> <!-- Replace 'yourusername' and 'yourgame.apk' -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-primary text-white text-center py-4">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out!</p>
+        <p>Email: your-email@example.com</p> <!-- Replace with your email -->
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
